@@ -3,11 +3,11 @@ import pygame
 
 pygame.init()
 
-size = [400, 400] #Размер окна
-screen = pygame.display.set_mode(size) #Создаём окно
-pygame.display.set_caption("Wolf Game") #Название окна
+size = [400, 400] #Window size
+screen = pygame.display.set_mode(size) #Creating window
+pygame.display.set_caption("Wolf Game") #Window name
 
-RED = (255, 0, 0) #Цвета через RGB
+RED = (255, 0, 0) #RGB colours
 BLUE = (0, 0, 255)
 BLACK = (0, 0, 0)
 GREEN = (0, 255, 0)
@@ -53,7 +53,7 @@ speed = 1
 
 nickname = ''
 
-top1 = 'None'
+top1 = 'None'   #Scoreboard
 top2 = 'None'
 top3 = 'None'
 top4 = 'None'
@@ -104,7 +104,7 @@ s10 = ''
 
 clock = pygame.time.Clock()
 
-leftup_surf = pygame.image.load("up_left.bmp")
+leftup_surf = pygame.image.load("up_left.bmp")                          #Wolf's positions
 leftup_rect = leftup_surf.get_rect(bottomright = (400,400))
 
 rightup_surf = pygame.image.load("up_right.bmp")
@@ -119,18 +119,16 @@ rightdown_rect = rightdown_surf.get_rect(bottomright = (400,400))
 game_surf = pygame.image.load("game.bmp")
 game_rect = game_surf.get_rect(bottomright = (400,400))
 
-##penta_surf = pygame.image.load("penta.bmp")
-##penta_rect = penta_surf.get_rect(bottomright = (400,400))
+##penta_surf = pygame.image.load("penta.bmp")                       Easter egg (666)
+##penta_rect = penta_surf.get_rect(bottomright = (400,400))         not complited
 
-menu_surf = pygame.image.load("Menu.bmp")
+menu_surf = pygame.image.load("Menu.bmp")                           #main menu
 menu_rect = menu_surf.get_rect(bottomright = (400,400))
 
-menu_surf = pygame.image.load("Menu.bmp")
-menu_rect = menu_surf.get_rect(bottomright = (400,400))
 screen.blit(menu_surf, menu_rect)
 pygame.display.flip()
 
-line =20
+line = 20
 
 #Скаты для яиц
 
